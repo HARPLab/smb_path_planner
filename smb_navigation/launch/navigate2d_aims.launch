@@ -12,11 +12,11 @@
   <!-- TODO Set right map -->
   <arg name="global_map"         default="$(find fetch_maps)/maps/aims-ada.yaml"/>
   
-  <include file="$(find fetch_navigation)/launch/fetch_nav.launch" >
+    <!-- <include file="$(find fetch_navigation)/launch/fetch_nav.launch" > -->
     <arg name="map_file" value="$(find fetch_maps)/maps/aims-ada.yaml" />
     <arg name="map_keepout_file" value="$(find fetch_maps)/maps/aims-keepout.yaml" />
     <arg name="use_keepout" value="false" />
-  </include>
+  <!-- </include> -->
 
   <!-- Parameters for follow-waypoint -->
   <arg name="output_folder"      default="$(find smb_navigation_scripts)/saved_path"/>
